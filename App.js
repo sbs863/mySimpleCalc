@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  View
+  View,
+    SafeAreaView
 } from 'react-native';
 
 import { Calc } from './src/components/screens'
@@ -9,9 +10,9 @@ import { Calc } from './src/components/screens'
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
         <Calc />
-      </View>
+      </SafeAreaView>
     );
   }
 }
